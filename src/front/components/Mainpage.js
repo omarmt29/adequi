@@ -18,7 +18,7 @@ export default function Mainpage(){
                 {/* NAVBAR */}
                 <div className='navbar-container '>
                     <li class="nav-list" id="menu">
-                        <a>Inicio</a>
+                        <a>Inicioo</a>
                         <a>Sobre nosotros</a>
                         <a>Actividadess</a>
                         <a>Transparencia</a>
@@ -29,9 +29,9 @@ export default function Mainpage(){
 
 
 
-                
 
-                {/* SLIDER A LA IZQUIERDA */}
+
+                {/* SLIDER Aa LA IZQUIERDA */}
 
                 {/* ASIDE DE NOTICIAS LA DERECHA */}
 
