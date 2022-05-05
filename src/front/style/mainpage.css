@@ -1,0 +1,43 @@
+.Main-container{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../style/fondo1.png");
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.Main-container #logo {
+    height: 20%;
+   width: 20%;
+
+}
+/* 
+navbar css */
+
+.navbar-container {
+    background-color: #086E97;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar-container li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 2em;
+    color: white;
+    
+}
+
+.navbar-container li a {
+    padding: 2em;
+}
+.navbar-container li a:hover {
+    background-color: #0fa6e1;
+    cursor: pointer;
+    
+}
