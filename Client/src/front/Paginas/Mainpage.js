@@ -9,16 +9,9 @@ export default function Mainpage() {
 
     return (
         <>
-            <div className="main-container">
-               <Navbar/>
+              <Navbar/>
 
-
-               
-
-
-            </div>
-
-
+        
         </>
     )
 

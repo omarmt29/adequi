@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    background-image: url("../src/front/style/fondo1.png");
+    width: 100%;
+}

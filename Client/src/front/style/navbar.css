@@ -1,14 +1,14 @@
-.active{
+.active {
     background-color: #0495fc;
 }
 
-.link{
+.link {
     color: white;
     text-decoration: none;
     padding: 1rem;
 }
 
-.link:hover{
+.link:hover {
     background-color: #0495fc;
 }
 
@@ -27,6 +27,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999px;
+
 }
 
 .logo {
@@ -35,7 +40,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .menu {
@@ -47,7 +52,7 @@
     transition: all 0.5s;
 }
 
-.menu .nav-container{
+.menu .nav-container {
     background-color: #004b7f;
     width: 100%;
     display: flex;
@@ -55,102 +60,98 @@
     align-items: center;
     text-align: center;
 
-    
+
 }
 
-.menu .icon-container {
+.icon-container {
     display: none;
 }
 
+.main-container{
+    margin-top: 15rem;
+    height: 100vh;
+}
 
 
-@media screen and (max-width: 635px) {
-    .header {
+@media screen and (max-width: 531px) {
+    .logo {
+        width: 20rem;
+        height: 10rem;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        transition: all 0.5s;
-        
-    }
-
-    .active{
-        background-color: #0495fc;
-        width: 100%;
-    }
-
-    
-
-    .icon-container{
-        display: block;
-        color: white;
-        min-width: 4rem;
-        width: 5rem;
-        height: 7rem;
         justify-content: center;
         align-items: center;
+
+    }
+
+    .icon-container {
+        display: block;
+        color: #fff;
+        width: 20%;
+        height: 10rem;
         display: flex;
-    }
-    .icon-container .icon{
-        font-size: 2rem;
-    }
-
-    .icon-container .icon:active {
-        color: #004b7f;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2rem;
+        margin-right: 1rem
     }
 
-    .menu{
-        position: absolute;
-        top: 7.3rem;
-        width: 100%;
-        height: 50%;
+    .icon-container .icon {
+        height: 20%;
+    }
+
+    .header {
+        flex-wrap: row wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
         background-color: #004b7f;
-        transition:all 0.5s;
-        margin-bottom: 20rem;
+        border: 2px solid #003153;
+        transition: all 0.5s;
         
+        
+    }
+
+
+    /* css del nav responsive */
+
+    .menu {
+        position: absolute;
+        top: 120px;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: -1;
+        transition: all 1s;
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        font-size: 1.5rem;
+    }
+
+    .link {
+        color: white;
+        text-decoration: none;
+        padding: 1rem;
+        width: 100%;
     }
 
     .menu-off{
-        position: absolute;
-        top: -900px;
-        transition: all 0.5s;
-       
+        display: none;
     }
 
-    
 
 
 
 
 
-    .menu .nav-container{
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        background-color: #004b7f;
-        gap: 1.3rem;
-        transition: all 5s;
-       
-    }
 
-    
-
-    .logo {
-        width: 12rem;
-        height: 6rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-width: 12rem;
-        margin-left: 1rem;
-        
-    }
-    .logo img{
-        
-        min-width: 10rem;
-
-    }
 
 }
